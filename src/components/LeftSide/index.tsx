@@ -38,7 +38,7 @@ const LeftSide = ({toShow, setToShow,disabledButton, setDisabledButton}: Props) 
         
         w-full border-b border-gray-400 py-[10px] px-[2px] mb-5 text-sm outline-none ${disabledButton ? 'cursor-not-allowed opacity-50': ''}`}
         type="number"
-        placeholder='Digite a sua altura. Ex 1.5 (em metros)'
+        placeholder='Digite a sua altura. Ex 1.5 ou 1,5 (em metros)'
         value={heightCtx?.heightField }
         onChange={(e) => heightCtx?.setHeightField(parseFloat(e.target.value))} 
         disabled = {disabledButton}
@@ -47,7 +47,7 @@ const LeftSide = ({toShow, setToShow,disabledButton, setDisabledButton}: Props) 
         className={`w-full border-b
          border-gray-400 py-[10px] px-[2px] mb-5 text-sm outline-none ${disabledButton ? 'cursor-not-allowed opacity-50': ''}`}
         type="number"
-        placeholder='Digite seu peso. Ex 80.6 (em Kg)'
+        placeholder='Digite seu peso. Ex 80.6 ou 80,6 (em Kg)'
         value={weightCtx?.weightField}
         onChange={(e) => weightCtx?.setWeightField(parseFloat(e.target.value))} 
         disabled = {disabledButton}
